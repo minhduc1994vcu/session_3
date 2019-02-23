@@ -6,23 +6,19 @@
 </head>
 <body>
 <script>
-   let user = prompt('who is there?',"")
+    let user = prompt('who is there?', "")
     if (user == 'Admin') {
-        let password = prompt('what is the password?',"")
+        let password = prompt('what is the password?', "")
         if (password == 'TheMaster') {
             alert('Welcome');
-        }
-        else if (password == null) {
+        } else if (password == null) {
             alert('Canceled');
-        }
-        else {
+        } else {
             alert('Wrong password');
         }
-    }
-    else if (user == null) {
+    } else if (user == null) {
         alert('Canceled');
-    }
-    else {
+    } else {
         alert("I don't know you");
     }
 </script>

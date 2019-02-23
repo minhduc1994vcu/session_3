@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="browser" placeholder="nhap trinh duyet">
+<input type="button" value="check" onclick="check()">
+<script>
+    function check() {
+        let browser = document.getElementById('browser').value
+        switch (browser) {
+            case 'Edge':
+                alert('You have got the Edge!');
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case'Opera':
+                alert('Okay we support these browsers too');
+                break;
+            default:
+                alert('We hope that this page look ok');
+
+        }
+    }
+</script>
+</body>
+</html>
